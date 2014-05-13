@@ -424,6 +424,8 @@
 
     // Remove regular state class
     parent[_remove](regular || option(input, callback) || '');
+
+    input.trigger('change');
   }
 
   // Remove checked, disabled or indeterminate state
@@ -464,6 +466,8 @@
 
     // Add regular state class
     parent[_add](regular || option(input, callback) || '');
+
+    input.trigger('change');
   }
 
   // Remove all traces
